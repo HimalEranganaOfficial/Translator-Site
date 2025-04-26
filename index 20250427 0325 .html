@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Certified Russian Sworn Translator in Sri Lanka - Nilan Jayasinghe. Professional translation services for legal, business, and personal documents.">
+  <title>Russian Sworn Translator - Sri Lanka | Nilan Jayasinghe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 0;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 1s ease;
+    }
+
+    .container.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .hero {
+      background: #0056b3;
+      color: white;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #007BFF;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #003d80;
+    }
+
+    section {
+      padding: 60px 20px;
+      background: #f9f9f9;
+    }
+
+    section:nth-child(even) {
+      background: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 10px 0;
+      font-size: 1.1rem;
+      text-align: center;
+    }
+
+    blockquote {
+      font-style: italic;
+      background: #eee;
+      padding: 20px;
+      border-left: 5px solid #007BFF;
+      margin: 20px 0;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    blockquote:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    a {
+      color: #007BFF;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+      z-index: 1000;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Russian Sworn Translator in Sri Lanka</h1>
+      <p>Professional, Certified, Trusted</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! My name is <strong>Nilan Sankalpa Jayasinghe</strong>, a professional sworn translator based in Sri Lanka. I lived, studied, and worked in Russia for over 13 years, earning a Bachelor’s, Master’s, and Ph.D. degree from Peter the Great St. Petersburg Polytechnic University. I am fluent in Russian, English, and Sinhala, and I provide certified translation services for official, legal, and business documents related to Sri Lanka.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <ul>
+        <li>Certified Document Translation (Russian - English - Sinhala)</li>
+        <li>Legal and Court Translation</li>
+        <li>Business and Contract Translation</li>
+        <li>Educational Certificates Translation</li>
+        <li>Interpretation Services (Meetings, Courts, Embassies)</li>
+        <li>Singhalese Language Lessons for Russian Speakers</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <h2>Reviews</h2>
+      <blockquote>
+        "Fast, accurate, and professional. Nilan translated all my visa documents perfectly. Highly recommend!" – Anna K., Russia
+      </blockquote>
+      <blockquote>
+        "Trustworthy service. Nilan assisted us with all legal translations for our marriage registration in Sri Lanka." – Sergey and Olesya
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:nilansankalpa@gmail.com">nilansankalpa@gmail.com</a></p>
+      <p>Phone / WhatsApp: <a href="tel:+94712953721">+94 71 295 3721</a></p>
+      <p>Location: Sri Lanka (Online and In-person services available)</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Nilan Jayasinghe. All rights reserved.</p>
+  </footer>
+
+  <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.onscroll = function() {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+
+      document.querySelectorAll('.container').forEach(function(container) {
+        const rect = container.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+          container.classList.add('visible');
+        }
+      });
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
