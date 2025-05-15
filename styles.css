@@ -256,3 +256,25 @@ body {
     flex-direction: column;
     list-style: none;
 }
+
+#reviews {
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    gap: 2px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+}
+
+#contact-links {
+    display: -moz-grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    place-content: center;
+}
